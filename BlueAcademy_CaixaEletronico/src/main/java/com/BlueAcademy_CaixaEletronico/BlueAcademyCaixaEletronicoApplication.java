@@ -1,4 +1,4 @@
-package com.BlueAcademy_CaixaEletronico.demo;
+package com.BlueAcademy_CaixaEletronico;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
