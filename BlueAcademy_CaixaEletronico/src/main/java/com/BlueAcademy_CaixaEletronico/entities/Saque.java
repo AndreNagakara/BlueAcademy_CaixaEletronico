@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.validation.constraints.NotNull;
 
 import lombok.Data;
 
@@ -11,6 +12,7 @@ import lombok.Data;
 @Entity
 public class Saque extends SuperEntity{
 
+	@NotNull(message = "Valor de saque inválido")
 	private int valor;
 		
 	@ElementCollection
