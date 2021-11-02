@@ -17,7 +17,7 @@ public class SaqueFactory {
 	public static SaqueDto Create(Saque saque) {
 		var dto = new SaqueDto();
 		dto.Id = saque.getId();
-		dto.Value = saque.getValor();
+		dto.Valor = saque.getValor();
 		dto.Notas = saque.getNotas();
 		
 		return dto;
@@ -26,7 +26,7 @@ public class SaqueFactory {
 	public static SaqueDto Create(int valor) {
 		var dto = new SaqueDto();
 		
-		dto.Value = valor;
+		dto.Valor = valor;
 		
 		List<String> temp = new ArrayList<String>();
 		
