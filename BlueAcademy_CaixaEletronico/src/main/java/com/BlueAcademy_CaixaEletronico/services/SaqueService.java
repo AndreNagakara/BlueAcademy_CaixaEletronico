@@ -26,7 +26,7 @@ public class SaqueService {
 		
 		contarNotasService.ContarNotas(formInternal);
 		
-		if  (formInternal.valor == 0)  {	
+		if  (formInternal.valor == 0 && !formInternal.notas.isEmpty() )  {	
 			form.notas = formInternal.notas;
 			Saque saque = SaqueFactory.Create(form);
 			repository.save(saque);		
